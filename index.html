@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>HRDI.ARCHIVE — Social Links</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at top, #29213d 0%, #121018 38%, #09090c 75%);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 25px 15px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 430px;
+      text-align: center;
+    }
+
+    /* PROFILE */
+    .profile {
+      margin-bottom: 28px;
+    }
+
+    .logo {
+      width: 105px;
+      height: 105px;
+      margin: auto;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background: linear-gradient(145deg, #8f63ff, #4d2b91);
+      border: 2px solid rgba(255,255,255,0.15);
+
+      box-shadow:
+        0 0 35px rgba(145, 94, 255, 0.35),
+        inset 0 0 20px rgba(255,255,255,0.08);
+    }
+
+    .logo span {
+      font-size: 38px;
+      font-weight: 800;
+      letter-spacing: -3px;
+    }
+
+    .username {
+      margin-top: 16px;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .verified {
+      color: #9b72ff;
+      font-size: 18px;
+      margin-left: 4px;
+    }
+
+    .bio {
+      margin-top: 8px;
+      color: #aaa6b5;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    /* LINKS */
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .link {
+      position: relative;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: white;
+
+      padding: 17px 20px;
+      border-radius: 18px;
+
+      background: rgba(255,255,255,0.055);
+      border: 1px solid rgba(255,255,255,0.09);
+
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+
+      transition: 0.25s ease;
+      overflow: hidden;
+    }
+
+    .link:hover {
+      transform: translateY(-3px);
+      background: rgba(255,255,255,0.09);
+      border-color: rgba(154,111,255,0.5);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+
+    .icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 21px;
+      font-weight: bold;
+      background: rgba(255,255,255,0.08);
+    }
+
+    .link-text {
+      flex: 1;
+      text-align: left;
+      margin-left: 15px;
+    }
+
+    .link-title {
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .link-subtitle {
+      margin-top: 3px;
+      color: #8f8b98;
+      font-size: 12px;
+    }
+
+    .arrow {
+      color: #77727f;
+      font-size: 20px;
+    }
+
+    /* ICON COLORS */
+    .instagram .icon {
+      background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+    }
+
+    .tiktok .icon {
+      background: #111;
+      border: 1px solid #333;
+    }
+
+    .whatsapp .icon {
+      background: #1fa855;
+    }
+
+    /* FOOTER */
+    .footer {
+      margin-top: 25px;
+      color: #66616e;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 400px) {
+      .logo {
+        width: 90px;
+        height: 90px;
+      }
+
+      .logo span {
+        font-size: 32px;
+      }
+
+      .username {
+        font-size: 21px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="container">
+
+    <!-- PROFILE -->
+    <section class="profile">
+
+      <div class="logo">
+        <span>HA</span>
+      </div>
+
+      <h1 class="username">
+        HRDI.ARCHIVE
+        <span class="verified">✓</span>
+      </h1>
+
+      <p class="bio">
+        Visual archive • DKV • Creative works<br>
+        Design, photography & digital stuff.
+      </p>
+
+    </section>
+
+
+    <!-- SOCIAL LINKS -->
+    <section class="links">
+
+      <!-- INSTAGRAM -->
+      <a
+        class="link instagram"
+        href="https://www.instagram.com/hrdi.archive"
+        target="_blank"
+      >
+        <div class="icon">◎</div>
+
+        <div class="link-text">
+          <div class="link-title">Instagram</div>
+          <div class="link-subtitle">@hrdi.archive</div>
+        </div>
+
+        <div class="arrow">›</div>
+      </a>
+
+
+      <!-- TIKTOK -->
+      <a
+        class="link tiktok"
+        href="https://www.tiktok.com/@hrdi.archive"
+        target="_blank"
+      >
+        <div class="icon">♪</div>
+
+        <div class="link-text">
+          <div class="link-title">TikTok</div>
+          <div class="link-subtitle">@hrdi.archive</div>
+        </div>
+
+        <div class="arrow">›</div>
+      </a>
+
+
+      <!-- WHATSAPP -->
+      <a
+        class="link whatsapp"
+        href="https://wa.me/6283890310662"
+        target="_blank"
+      >
+        <div class="icon">◉</div>
+
+        <div class="link-text">
+          <div class="link-title">WhatsApp</div>
+          <div class="link-subtitle">Chat with me</div>
+        </div>
+
+        <div class="arrow">›</div>
+      </a>
+
+    </section>
+
+
+    <footer class="footer">
+      © 2026 HRDI.ARCHIVE
+    </footer>
+
+  </main>
+
+</body>
+</html>
